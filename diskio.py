@@ -4,15 +4,15 @@ import time
 
 bw_f = 0
 exec_t = 0.0829632347
-input_file_path = "io.txt"
-output_file_path = "max_io.txt"
+input_file_path = "xx"
+output_file_path = "xxx"
 pattern_bw = r'sda\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+(\d+\.\d+)'
-cmd_loc = "ssh -i /home/ida/.ssh/id_ed25519 ida@ida-loc:locust -f /home/ida/locust/4th/locustfile.py --headless --csv /home/ida/locust/4th/result_locust/test --users 400 --spawn-rate 400 -t 3600s &"
-cmd_io = "iostat -xt sda 1 > io.txt &"
+cmd_loc = "ssh -i ~/.ssh/xxxx hoge@hoge:locust -f ~/locustfile.py --headless --csv ~/hogehoge --users 123 --spawn-rate 123 -t 123s &"
+cmd_io = "iostat -xt sda 1 > xxxx &"
 
 proc_loc = subprocess.Popen(cmd_loc, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
 proc_io = subprocess.Popen(cmd_io, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
-time.sleep(3600)
+time.sleep(123)
 
 # ファイルを読み取りモードで開く
 with open(input_file_path, 'r') as input_file:

@@ -7,7 +7,7 @@ exec_t = 0.0829632347
 input_file_path = "xx"
 output_file_path = "xxx"
 pattern_bw = r'sda\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+\s+(\d+\.\d+)'
-cmd_loc = "ssh -i ~/.ssh/xxxx hoge@hoge:locust -f ~/locustfile.py --headless --csv ~/hogehoge --users 123 --spawn-rate 123 -t 123s &"
+cmd_loc = "ssh -i ~/.ssh/xxxx hoge@hoge locust -f ~/locustfile.py --headless --csv ~/hogehoge --users 123 --spawn-rate 123 -t 123s &"
 cmd_io = "iostat -xt sda 1 > xxxx &"
 
 proc_loc = subprocess.Popen(cmd_loc, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)

@@ -88,5 +88,4 @@ while true; do
 
     echo -e "\n" >> $log
     date "+%Y-%m-%d %H:%M:%S" >> $log
-    sleep 1
 done
